@@ -3,19 +3,63 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Animated Navigation</title>
-    <link rel="icon" type="image/png" href="favicon.png" />
+    <title>JavaScript Advanced CSS Animation Navigation</title>
+    <link rel="icon" type="image/ico" href="favicon.ico" />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <!-- Sections -->
-    <section id="home">
-      <a href="https://jacinto.design" target="_blank">Jacinto Design</a>
-    </section>
-    <section id="about"><h1>Learn More About Me</h1></section>
-    <section id="skills"><h1>These Are My Strengths</h1></section>
-    <section id="projects"><h1>These Are My Results</h1></section>
-    <section id="contact"><h1>Available Anytime</h1></section>
+    <!-- Menu Overlay -->
+    <div class="overlay overlay-slide-left" id="overlay" aria-hidden="true">
+      <!-- Navigation Menu -->
+      <nav aria-label="Main Navigation">
+        <ul>
+          <li id="nav-1" class="slide-out-1"><a href="#">Home</a></li>
+          <li id="nav-2" class="slide-out-2"><a href="#about">About</a></li>
+          <li id="nav-3" class="slide-out-3"><a href="#skills">Skills</a></li>
+          <li id="nav-4" class="slide-out-4">
+            <a href="#projects">Projects</a>
+          </li>
+          <li id="nav-5" class="slide-out-5"><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Menu Toggle Button (Hamburger Icon) -->
+    <button
+      class="menu-bars"
+      id="menu-bars"
+      aria-label="Toggle Navigation"
+      aria-expanded="false"
+    >
+      <span class="bar1"></span>
+      <span class="bar2"></span>
+      <span class="bar3"></span>
+    </button>
+
+    <!-- Main Content Sections -->
+    <main>
+      <section id="home">
+        <a
+          href="https://jacinto.design"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Animation Navigation</a
+        >
+      </section>
+      <section id="about">
+        <h1>Learn More About Me</h1>
+      </section>
+      <section id="skills">
+        <h1>These Are My Strengths</h1>
+      </section>
+      <section id="projects">
+        <h1>These Are My Results</h1>
+      </section>
+      <section id="contact">
+        <h1>Available Anytime</h1>
+      </section>
+    </main>
+
     <!-- Script -->
     <script src="./js/script.js"></script>
   </body>
